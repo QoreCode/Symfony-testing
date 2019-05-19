@@ -1,0 +1,23 @@
+.login-wrap {
+    min-width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.login-wrap form {
+    margin-top: 40px;
+}
+
+/* forms */
+.login-wrap form > div {
+    display: grid;
+}
+
+.login-wrap form ul {
+    grid-row: 3;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: red;
+}

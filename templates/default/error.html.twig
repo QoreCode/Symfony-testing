@@ -1,0 +1,23 @@
+{% extends '/layout/base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('css/error.css') }}">
+{% endblock %}
+
+
+
+{% block body %}
+
+    <div class="error-page">
+        <h1 class="error-page__title">404</h1>
+
+        <span class="error-page__description">
+            Страница не найдена, пройдите на <a href="{{ path('index') }}">главную</a>, пожайлуста
+        </span>
+    </div>
+
+{% endblock %}

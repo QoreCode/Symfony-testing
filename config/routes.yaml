@@ -1,7 +1,24 @@
 index:
   path: /
   controller: App\Controller\DefaultController::homepage
+  methods: GET
+
+login:
+  path: /login
+  controller: App\Controller\AuthController::login
+  methods: GET|POST
 
 not-found:
   path: /not-found
   controller: App\Controller\DefaultController::notFound
+  methods: GET
+
+logout:
+  path: /logout
+  controller: App\Controller\AuthController::logout
+  methods: GET
+
+register:
+  path: /registration
+  controller: App\Controller\AuthController::registration
+  methods: GET|POST

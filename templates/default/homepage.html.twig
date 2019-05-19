@@ -1,0 +1,20 @@
+{% extends '/layout/base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+
+    <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <h1 class="h3 mb-3 font-weight-normal">Your profile data:</h1>
+
+    <div class="card user-profile">
+        <div class="user-profile__line"><b>Login</b> <span>{{ user.login }}</span></div>
+        <div class="user-profile__line"><b>Name</b> <span>{{ user.name }}</span></div>
+        <div class="user-profile__line"><b>Age</b> <span>{{ user.age }}</span></div>
+        <div class="user-profile__line"><b>Role</b> <span>{{ user.getRoleLabel() }}</span></div>
+    </div>
+
+{% endblock %}

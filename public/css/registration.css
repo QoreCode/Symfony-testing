@@ -1,0 +1,11 @@
+.registration-wrap {
+    min-width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.registration-wrap form {
+    margin-top: 40px;
+}

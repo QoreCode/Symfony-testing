@@ -1,0 +1,21 @@
+.user-profile{
+    width: 100%;
+    max-width: 400px;
+}
+
+.user-profile__line {
+    padding: 10px 20px;
+    cursor: default;
+    background-color: #ffffff;
+    transition: background-color 0.1s;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profile__line:hover {
+    background-color: #f0f0f0;
+}
+
+.user-profile__line:not(:last-child) {
+    border-bottom: 1px solid #26a69a;
+}
